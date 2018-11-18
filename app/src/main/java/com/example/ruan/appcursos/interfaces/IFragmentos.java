@@ -9,8 +9,9 @@ import com.example.ruan.appcursos.fragmentos.DesenvolvedorFragmento;
 import com.example.ruan.appcursos.fragmentos.RegistrarCursoFragmento;
 
 // Esta interface deve-se extender da interface OnFragmentInteractionListener que está contida
-// dentro dos fragmentos criados. Sendo assim, deve-se estender desta interface para cada fragmento
-// criado no projeto
+// dentro dos fragmentos criados. Todos os fragmentos criado no projeto possuem este evento
+// OnFragmentInteractionListener, e desta forma, todos eles devem ser incluídos como extensão
+// desta interface IFragmentos
 public interface IFragmentos extends
         BemVindoFragmento.OnFragmentInteractionListener,
         ConsultarCursoFragmento.OnFragmentInteractionListener,
