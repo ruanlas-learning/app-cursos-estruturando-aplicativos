@@ -18,4 +18,5 @@ public interface IFragmentos extends
         ConsultarListaCursosFragmento.OnFragmentInteractionListener,
         DesenvolvedorFragmento.OnFragmentInteractionListener,
         RegistrarCursoFragmento.OnFragmentInteractionListener {
+
 }
