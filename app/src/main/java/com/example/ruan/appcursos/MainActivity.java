@@ -22,6 +22,9 @@ import com.example.ruan.appcursos.interfaces.IFragmentos;
 /*
 * Fragmentos em 4 passos:
 *   https://www.androidpro.com.br/blog/desenvolvimento-android/fragments/
+*
+* Outro post:
+*   http://www.botecodigital.info/android/trabalhando-com-android-fragments/
 * */
 
 public class MainActivity extends AppCompatActivity
