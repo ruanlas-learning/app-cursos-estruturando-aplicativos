@@ -4,6 +4,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,7 +15,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.ruan.appcursos.fragmentos.BemVindoFragmento;
+import com.example.ruan.appcursos.fragmentos.DesenvolvedorFragmento;
 import com.example.ruan.appcursos.interfaces.IFragmentos;
+
+/*
+* Fragmentos em 4 passos:
+*   https://www.androidpro.com.br/blog/desenvolvimento-android/fragments/
+* */
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IFragmentos {
@@ -40,6 +48,10 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        ///
+        Fragment fragmentoBemVindo = new BemVindoFragmento();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_content_main, fragmentoBemVindo).commit();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -98,7 +110,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_consulta_img_url) {
 
         } else if (id == R.id.nav_desenvolvedor) {
-
+            Fragment fragmentoDesenvolvedor = new DesenvolvedorFragmento();
+            getSupportFragmentManager().beginTransaction().replace(R.id.view_content_main, fragmentoDesenvolvedor).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
