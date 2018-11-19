@@ -28,18 +28,18 @@
             android:id="@+id/nav_consulta_cursos_img"
             android:icon="@android:drawable/ic_menu_search"
             android:title="Lista de Cursos Imagem" />
+        <item
+            android:id="@+id/nav_consulta_img_url"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Lista de Cursos Imagem URL" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Informações">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_desenvolvedor"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="Desenvolvedor" />
         </menu>
     </item>
 
