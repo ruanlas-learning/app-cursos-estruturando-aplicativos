@@ -6,20 +6,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_inicio"
-            android:icon="@drawable/ic_menu_info_detalhes"
+            android:icon="@android:drawable/ic_menu_info_details"
             android:title="Início" />
         <item
             android:id="@+id/nav_registro"
-            android:icon="@drawable/ic_menu_add"
+            android:icon="@android:drawable/ic_menu_add"
             android:title="Cursos" />
         <item
             android:id="@+id/nav_consulta"
-            android:icon="@drawable/ic_menu_consulta"
+            android:icon="@android:drawable/ic_menu_search"
             android:title="Consulta Curso" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_consulta_url"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Consular Curso por URL" />
+        <item
+            android:id="@+id/nav_consulta_lista"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Consular lista de cursos" />
+        <item
+            android:id="@+id/nav_consulta_cursos_img"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Lista de Cursos Imagem" />
     </group>
 
     <item android:title="Communicate">
