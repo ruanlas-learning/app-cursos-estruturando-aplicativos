@@ -25,6 +25,9 @@ import com.example.ruan.appcursos.interfaces.IFragmentos;
 *
 * Outro post:
 *   http://www.botecodigital.info/android/trabalhando-com-android-fragments/
+*
+* Para trabalhar com webservices é necessário utilizar a extensão Volley do android, adicionando
+* nas dependências.
 * */
 
 public class MainActivity extends AppCompatActivity
