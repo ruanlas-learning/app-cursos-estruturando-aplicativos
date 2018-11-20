@@ -28,6 +28,9 @@ import com.example.ruan.appcursos.interfaces.IFragmentos;
 *
 * Para trabalhar com webservices é necessário utilizar a extensão Volley do android, adicionando
 * nas dependências.
+*
+* Existem outros tipos de layouts, como o ViewPage (muda de tela ou fragmento com arraste lateral),
+* e LayoutComposto (inclui todos os recursos de layout, guias de navegação, etc)
 * */
 
 public class MainActivity extends AppCompatActivity
